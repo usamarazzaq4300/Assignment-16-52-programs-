@@ -123,4 +123,105 @@
 // }
 // document.write("The character which appears least is "+'"'+miniChar+'"')
 
+// 43- Write a js program to find sum of all natural numbers between 1 to n.
+// var n = prompt("Please Enter the value of n:")
+// var i = 1;
+// var sum = 0
+// while(i<n)
+// {
+//     sum = sum + i ;
+//     i = i + 1; 
+// }
+// document.write("The sum all natural numbes from 1 to "+n+" is "+sum)
+
+// 44- Write a js program to find sum of all even numbers between 1 to n.
+// var n = prompt("Please Enter the value of n:")
+// var i = 1;
+// var sum = 0 ;
+// while(i<n)
+// {
+//     if(i%2 == 0)
+//     {
+//         sum = sum + i;
+//     }
+//     i = i + 1 ;
+// }
+// document.write("The sum of all even numbers between 1 to "+n+" is "+sum)
+
+// 45- Write a js program to find sum of all odd numbers between 1 to n.
+// var n = prompt("Please Enter the value of n:")
+// var i = 3;
+// var sum = 0 ;
+// while(i<n)
+// {
+//     if(i%2 != 0)
+//     {
+//         sum = sum + i;
+//     }
+//     i = i + 1 ;   
+// }
+// document.write("The sum of all odd numbers between 1 to "+n+" is "+sum)
+
+// 46- Write a js program to print multiplication table of any number.
+// var n = prompt("Please Enter the number you want to print the table of:")
+// n = parseInt(n)
+// var i = 1
+// while(i<=10)
+// {
+//     document.write(n+" * "+i+" = "+ n*i)
+//     document.write("<br>")
+//     i = i+1
+// }
+// 47- Write a js program to count number of digits in a number.
+// var number = prompt("Please enter the number you want to count the digits of:")
+// var counter = 0 ;
+// for(var  i = 0; i<number.length; i++)
+// {
+//     counter = counter + 1;
+// }
+// document.write("There are "+counter+" digits in a number.")
+
+// 48- Write a js program to find first and last digit of a number.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
