@@ -182,44 +182,69 @@
 // document.write("There are "+counter+" digits in a number.")
 
 // 48- Write a js program to find first and last digit of a number.
+// var number = prompt("Please enter the number:")
+// var firstdigit = number.slice(0,1)
+// var lastdigit = number.slice(number.length-1)
+// document.write("The first digit of number is"+firstdigit+" and last digit is "+lastdigit)
 
+// 49- Write a js program to find sum of first and last digit of a number.
+// var number = prompt("Please enter the number:")
+// var firstdigit = number.slice(0,1)
+// var lastdigit = number.slice(number.length-1)
+// firstdigit = parseInt(firstdigit)
+// lastdigit = parseInt(lastdigit)
+// var sum = firstdigit+lastdigit
+// document.write("The sum of first digit and last digit is "+sum)
 
+// 50. Write a js program to swap first and last digits of a number.
+// var number = prompt("Please enter the number:")
+// var firstdigit = number.slice(0,1)
+// var lastdigit = number.slice(number.length-1)
+// var middleChars = number.slice(1,number.length -1)
+// var numberSwap = lastdigit+middleChars+firstdigit
+// document.write("The original number is "+number+" and the number after swapping is "+numberSwap)
 
+// 51. Write a js program to calculate sum of digits of a number.
+// var number = prompt("Please enter the number:")
+// var numbersArr = []
+// var sum = 0;
+// var digit ;
+// var num ;
+// for(var  i = 0; i<number.length;i++)
+// {
+//     digit = number.slice(i,i+1)
+//     numbersArr.unshift(digit)
+// }
+// for(var j = 0; j < numbersArr.length+1; j++)
+// {
+//     digit = numbersArr.shift()
+//     digit = parseInt(digit)
+//     sum = sum+digit
+// }
+// var lastDigit = numbersArr[0]
+// lastDigit = parseInt(lastDigit)
+// document.write("The sum of digits of a number is " +(sum+lastDigit))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 52. Write a js program to calculate product of digits of a number.
+// var number = prompt("Please enter the number:")
+// var numbersArr = []
+// var prod = 1;
+// var digit ;
+// var num ;
+// for(var  i = 0; i<number.length;i++)
+// {
+//     digit = number.slice(i,i+1)
+//     numbersArr.unshift(digit)
+// }
+// for(var j = 0; j < numbersArr.length+1; j++)
+// {
+//     digit = numbersArr.shift()
+//     digit = parseInt(digit)
+//     prod = prod*digit
+// }
+// var lastDigit = numbersArr[0]
+// lastDigit = parseInt(lastDigit)
+// document.write("The product of digits of a number is " +(prod*lastDigit))
 
 
 
