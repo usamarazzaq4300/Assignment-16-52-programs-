@@ -123,6 +123,66 @@
 // }
 // document.write("The character which appears least is "+'"'+miniChar+'"')
 
+// 15- Write a js program to remove first occurrence of a character from string.
+// var str ="javascript is a scripting language."
+// var char = prompt("please enter character you want to remove first occurence:")
+// var charToremove = str.indexOf(char)
+// var firstStr = str.slice(0,charToremove)
+// var secondStr = str.slice(charToremove+1, str.length)
+// var fullStr = firstStr+secondStr
+// document.write("Original string "+str+"<br>")
+// document.write("The string after removing the first occurance of character "+ char+" is "+'"'+fullStr+'"')
+
+// 16- Write a js program to remove last occurrence of a character from string.
+// var str ="javascript"
+// var char = prompt("please enter character you want to remove last occurence:")
+// var charToremove = str.lastIndexOf(char)
+// var firstStr = str.slice(0,charToremove)
+// var secondStr = str.slice(charToremove+1, str.length)
+// var fullStr = firstStr+secondStr
+// document.write("Original string "+str+"<br>")
+// document.write("The string after removing the last occurance of character "+ char+" is "+'"'+fullStr+'"')
+
+// 17- Write a js program to remove all occurrences of a character from string.
+// var str = "javajavajava"
+// var char = prompt("Please enter the character to remove:")
+// for (var i = 0; i<=str.length; i++)
+// {
+//     if(char == str.slice(i , i+1))
+//     {
+//         str = str.replace(char , "")
+//     }
+// }
+// document.write(str)
+
+// 18- Write a js program to remove all repeated characters from a given string.
+// var str = "geeksforgeeks"
+// var newStr = [];
+// var char;
+// var ishara = 1;
+// for(var i = 0; i<=str.length; i++)
+// {
+//     char = str.slice(i , i+1)
+//     for(var j = 0; j<=newStr.length; j++)
+//     {
+//         if(char == newStr[j])
+//         {
+//             ishara = 0;
+//         }
+//         else
+//         {
+//             ishara = 1;
+//         }
+//     }
+//     if(ishara !=0)
+//     {
+//         newStr.push(char)
+//     }
+// }
+// document.write(newStr)
+
+
+
 // 43- Write a js program to find sum of all natural numbers between 1 to n.
 // var n = prompt("Please Enter the value of n:")
 // var i = 1;
