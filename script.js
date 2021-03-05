@@ -156,10 +156,10 @@
 // document.write(str)
 
 // 18- Write a js program to remove all repeated characters from a given string.
-// var str = "geeksforgeeks"
+// var str = "usamarazzaq"
 // var newStr = [];
 // var char;
-// var ishara = 1;
+// var count = 0
 // for(var i = 0; i<=str.length; i++)
 // {
 //     char = str.slice(i , i+1)
@@ -167,21 +167,104 @@
 //     {
 //         if(char == newStr[j])
 //         {
-//             ishara = 0;
-//         }
-//         else
-//         {
-//             ishara = 1;
+//             count = count+1
 //         }
 //     }
-//     if(ishara !=0)
+//     if(count ==0)
 //     {
 //         newStr.push(char)
 //     }
+//     count = 0
 // }
-// document.write(newStr)
+// var latestStr = ""
+// for( var i = 0; i<newStr.length;i++)
+// {
+//     latestStr = latestStr+newStr[i]
+// }
+// document.write(latestStr)
 
+// 19- Write a js program to replace first occurrence of a character with another in a string.
+// var string = "javascript javascript"
+// var charToreplace = prompt("Please enter character to remove:")
+// var charToadd = prompt("Please enter character to replace with:")
+// for(var  i=0; i<=string.length;i++)
+// {
+//     if(charToreplace == string.slice(i,i+1))
+//     {
+//         string = string.replace(charToreplace , charToadd)
+//         break
+//     }
+// }
+// document.write(string)
 
+// 20- Write a js program to replace last occurrence of a character with another in a string.
+// var string = "javascript javascript"
+// var charToreplace = prompt("Please enter character to remove:")
+// var charToadd = prompt("Please enter character to replace with:")
+// var indexChar= string.lastIndexOf(charToreplace)
+// var str1 = string.slice(0,indexChar)
+// var str2 = string.slice(indexChar+1,string.length)
+// string =str1+charToadd+str2
+// document.write(string)
+
+// 21- Write a js program to replace all occurrences of a character with another in a string.
+// var string = "javascript javascript"
+// var charToreplace = prompt("Please enter character to remove:")
+// var charToadd = prompt("Please enter character to replace with:")
+// for(var  i=0; i<=string.length;i++)
+// {
+//     if(charToreplace == string.slice(i,i+1))
+//     {
+//         string = string.replace(charToreplace , charToadd)
+//     }
+// }
+// document.write(string)
+
+//22- Write a js program to find first occurrence of a word in a given string.
+// var string = "javascript is a scripting language"
+// var word;
+// var arr =[]
+// for(var i=0; i<=string.length; i++)
+// {
+//     word = string.slice(i,i+1)
+//     if(word != " ")
+//     {
+//         arr.push(word)
+//     }
+//     else
+//     {
+//         break
+//     }
+// }
+// var oneChar = arr.slice(0,1)
+// for(var i = 1; i<=arr.length; i++)
+// {
+//     oneChar = oneChar+arr.slice(i,i+1)
+// }
+// document.write(oneChar)
+
+// 23- Write a js program to find last occurrence of a word in a given string.
+// var string = "javascript is a scripting language"
+// var word ;
+// var arr =[]
+// for(var i = string.length; i>=0; i--)
+// {
+//     word = string.slice(i-1,i)
+//     if(word != " ")
+//     {
+//         arr.unshift(word)
+//     }
+//     if(word == " ")
+//     {
+//         break
+//     }
+// }
+// word = arr.slice(0,1)
+// for(var  i = 1; i<=arr.length; i++)
+// {
+//     word = word+arr.slice(i,i+1)
+// }
+// document.write(word)
 
 // 43- Write a js program to find sum of all natural numbers between 1 to n.
 // var n = prompt("Please Enter the value of n:")
