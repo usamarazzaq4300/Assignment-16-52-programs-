@@ -346,6 +346,28 @@
 // }
 
 // 35- Write a js program to count total number of duplicate elements in an array.
+var arr = [1,2,1,2,3,5,4,6,8,4,6,7,9,7]
+var counter  = 0 ;
+var element;
+var uniqueArr = []
+for (var  i = 0; i<=arr.length; i++)
+{
+    element = arr[i]
+    for(var  j = 0 ; j<=arr.length;j++)
+    {
+        if(element == arr[j])
+        {
+            counter = counter + 1; 
+        }
+    }
+    if(counter>1)
+    {
+        uniqueArr.push(element)
+    }
+    counter = 0 ;
+}
+document.write("There are "+uniqueArr.length+" duplicate elements in array.")
+
 
 
 
