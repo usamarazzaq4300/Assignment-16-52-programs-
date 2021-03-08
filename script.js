@@ -266,6 +266,91 @@
 // }
 // document.write(word)
 
+// 24- Write a js program to search all occurrences of a word in given string.
+
+// 25- Write a js program to count occurrences of a word in a given string.
+// var str = "javascript is scripting language. javascript is browser based language."
+// var word = prompt("Please enter word to find:")
+// var count = 0;
+// for (var i =0; i<=str.length; i++)
+// {
+//     if(word == str.slice(i,i+word.length))
+//     {
+//         count = count + 1
+//     }
+// }
+// document.write(word+" word appears "+count+" times.")
+
+// 26- Write a js program to remove first occurrence of a word from string.
+// var str = "javascript is scripting language. javascript is a browser based language."
+// var word = prompt("Please enter word to remove first occurance:")
+// var wordToremove = str.indexOf(word)
+// var firstStr = str.slice(0,wordToremove)
+// var secondStr = str.slice(wordToremove+word.length , str.length)
+// var fullStr = firstStr+secondStr
+// document.write("Original string "+str+"<br>")
+// document.write(fullStr)
+
+// 27- Write a js program to remove last occurrence of a word in given string.
+// var str = "javascript is scripting language. javascript is a browser based language."
+// var word = prompt("please enter word to remove last occurence:")
+// var wordToremove = str.lastIndexOf(word)
+// var firstStr = str.slice(0,wordToremove)
+// var secondStr = str.slice(wordToremove+word.length, str.length)
+// var fullStr = firstStr+secondStr
+// document.write("Original string:"+str+"<br>")
+// document.write(fullStr)
+
+// 28- Write a js program to remove all occurrence of a word in given string.
+// var str = "javascript is scripting language. javascript is a browser based language."
+// var word = prompt("Please enter word to remove:")
+// for (var i = 0; i<=str.length; i++)
+// {
+//     if(word == str.slice(i , i+word.length))
+//     {
+//         str = str.replace(word , "")
+//     }
+// }
+// document.write(str)
+
+// 33- Write a js program to count frequency of each element in an array
+// var arr = [1,3,3,1,2,5,3,2,4,5,5,6,8,7,8,9]
+
+// 34- Write a js program to print all unique elements in the array.
+// var arr = [1,2,2,3,2,4,5,4,6,8,6,7,7,9,9]
+// var counter  = 0 ;
+// var element;
+// var uniqueArr = []
+// for (var  i = 0; i<=arr.length; i++)
+// {
+//     element = arr[i]
+//     for(var  j = 0 ; j<=arr.length;j++)
+//     {
+//         if(element == arr[j])
+//         {
+//             counter = counter + 1; 
+//         }
+//     }
+//     if(counter<=1)
+//     {
+//         uniqueArr.push(element)
+//     }
+//     counter = 0 ;
+// }
+// var uniqueElements ;
+// document.write("The unique elements in the array are: <br>")
+// for (var i = 0; i<=uniqueArr.length ; i++)
+// {
+//     uniqueElements = uniqueArr.slice(i,i+1)
+//     document.write(uniqueElements+" ")
+// }
+
+// 35- Write a js program to count total number of duplicate elements in an array.
+
+
+
+
+
 // 43- Write a js program to find sum of all natural numbers between 1 to n.
 // var n = prompt("Please Enter the value of n:")
 // var i = 1;
