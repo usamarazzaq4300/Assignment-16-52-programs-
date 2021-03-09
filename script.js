@@ -346,28 +346,128 @@
 // }
 
 // 35- Write a js program to count total number of duplicate elements in an array.
-var arr = [1,2,1,2,3,5,4,6,8,4,6,7,9,7]
-var counter  = 0 ;
-var element;
-var uniqueArr = []
-for (var  i = 0; i<=arr.length; i++)
-{
-    element = arr[i]
-    for(var  j = 0 ; j<=arr.length;j++)
-    {
-        if(element == arr[j])
-        {
-            counter = counter + 1; 
-        }
-    }
-    if(counter>1)
-    {
-        uniqueArr.push(element)
-    }
-    counter = 0 ;
-}
-document.write("There are "+uniqueArr.length+" duplicate elements in array.")
+// var arr = [1,2,1,2,3,5,4,6,8,4,6,7,9,7]
+// var counter  = 0 ;
+// var element;
+// var uniqueArr = []
+// for (var  i = 0; i<=arr.length; i++)
+// {
+//     element = arr[i]
+//     for(var  j = 0 ; j<=arr.length;j++)
+//     {
+//         if(element == arr[j])
+//         {
+//             counter = counter + 1; 
+//         }
+//     }
+//     if(counter>1)
+//     {
+//         uniqueArr.push(element)
+//     }
+//     counter = 0 ;
+// }
+// document.write("There are "+uniqueArr.length+" duplicate elements in array.")
 
+// 36- Write a js program to delete all duplicate elements from an array.
+// var arr = [1,2,1,2,3,5,4,6,8,4,6,7,9,7]
+// var counter  = 0 ;
+// var element;
+// var uniqueArr = []
+// for (var  i = 0; i<=arr.length; i++)
+// {
+//     element = arr[i]
+//     for(var  j = 0 ; j<=arr.length;j++)
+//     {
+//         if(element == arr[j])
+//         {
+//             counter = counter + 1; 
+//         }
+//     }
+//     if(counter<=1)
+//     {
+//         uniqueArr.push(element)
+//     }
+//     counter = 0 ;
+// }
+// var uniqueElements ;
+// document.write("The array after deleting duplicates elements from array are: <br>")
+// for (var i = 0; i<=uniqueArr.length ; i++)
+// {
+//     uniqueElements = uniqueArr.slice(i,i+1)
+//     document.write(uniqueElements+" ")
+// }
+
+// 37- Write a js program to merge two array to third array.
+// var arr1 = [1,2,3,4,5]
+// var arr2 = [6,7,8,9,10]
+// var poping ;
+// for(var i = 0; i<arr2.length; i++)
+// {
+//     poping = arr2.slice(i,i+1)
+//     arr1.push(poping)
+// }
+// document.write("The merged array is : <br>")
+// document.write(arr1)
+
+// 38- Write a js program to find reverse of an array.
+// var arr = [1,2,3,4,5]
+// var element ;
+// var reverseArr = []  
+// for(i=0; i<arr.length; i++)
+// {
+//     reverseArr.unshift(arr[i])
+// }
+// document.write("The reverse of array is: <br>")
+// document.write(reverseArr)
+
+// 39- Write a js program to put even and odd elements of array in two separate array.
+// var arr = [0,1,2,3,7,4,6,5]
+// var oddArr = []
+// var evenArr = []
+// var element ;
+// for(i = 0; i<arr.length; i++)
+// {
+//     element = arr.slice(i,i+1)
+//     if(element%2 == 0)
+//     {
+//         evenArr.push(element)
+//     }
+//     else
+//     {
+//         oddArr.push(element)
+//     }
+// }
+// document.write("Even array: <br>"+evenArr+"<br>")
+// document.write("Odd array: <br>"+oddArr)
+
+// 40- Write a js program to search an element in an array.
+// var arr = [0,1,2,3,7,4,6,5]
+// var element = prompt("Please enter the number you want to search:")
+// var elementLocation = 0  ;
+// for( i = 0; i<=arr.length; i++)
+// {
+//     if(element == arr.slice(i,i+1))
+//     {
+//         elementLocation = i+1 ;
+//     }  
+// }
+// if(elementLocation!=0)
+// {
+//     document.write("Element "+element+" is found at location "+elementLocation)
+// }
+// else
+// {
+//     document.write(" Element not Found")
+// }
+
+// 41- Write a js program to sort array elements in ascending or descending order.
+var arr = [2,1,3]
+var element ; 
+for(i = 0 ; i<3; i++)
+{
+    
+}
+document.write(arr)
 
 
 
