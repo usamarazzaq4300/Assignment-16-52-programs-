@@ -1,3 +1,78 @@
+// 4- Write a js program to count total number of notes in given amount.
+// var amount = prompt("Please enter the amount:")
+// amount = parseInt(amount)
+// if (amount >= 500) {
+//     var note500 = amount / 500;
+//     note500 = Math.floor(note500)
+//     amount = amount % 500
+// }
+// else {
+//     note500 = 0;
+// }
+// if (amount >= 100) {
+//     var note100 = amount / 100;
+//     note100 = Math.floor(note100)
+//     amount = amount % 100
+// }
+// else {
+//     note100 = 0;
+// }
+// if (amount >= 50) {
+//     var note50 = amount / 50;
+//     note50 = Math.floor(note50)
+//     amount = amount % 50
+// }
+// else {
+//     note50 = 0;
+// }
+// if (amount >= 20) {
+//     var note20 = amount / 20;
+//     note20 = Math.floor(note20)
+//     amount = amount % 20
+// }
+// else {
+//     note20 = 0;
+// }
+// if (amount >= 10) {
+//     var note10 = amount / 10;
+//     note10 = Math.floor(note10)
+//     amount = amount % 10
+// }
+// else {
+//     note10 = 0;
+// }
+// if (amount >= 5) {
+//     var note5 = amount / 5;
+//     note5 = Math.floor(note5)
+//     amount = amount % 5
+// }
+// else {
+//     note5 = 0;
+// }
+// if (amount >= 2) {
+//     var note2 = amount / 2;
+//     note2 = Math.floor(note2)
+//     amount = amount % 2
+// }
+// else {
+//     note2 = 0;
+// }
+// if (amount >= 1) {
+//     var note1 = amount / 1;
+//     note1 = Math.floor(note1)
+//     amount = amount % 100
+// }
+// else {
+//     note1 = 0;
+// }
+// document.write("500 : " + note500 + "<br>"+ "100 : " + note100 + "<br>"+ "50 : " + note50 + "<br>"+ "20 : " + note20 + "<br>"+ "10 : " + note10 + "<br>"+ "5 : " + note5 + "<br>"+ "2 : " + note2 + "<br>"+ "1 : " + note1)
+
+
+
+
+
+
+
 // 5- Write a js program to input angles of a triangle and check whether triangle is valid or not.
 // var angle1 = prompt("Please enter angle of first side:")
 // var angle2 = prompt("Please enter angle of second side:")
@@ -73,6 +148,18 @@
 // {
 //     alert("roots are complex")
 // }
+// 11- Write a js program to count occurrences of a character in given string.
+// var str = "javassscript"
+// var counter = 0 ;
+// var char = prompt("Please enter the character:")
+// for(i = 0 ; i<=str.length; i++)
+// {
+//     if(char==str.slice(i,i+1))
+//     {
+//         counter = counter+1
+//     }
+// }
+// document.write("The character "+char+" appears "+counter+" times in string." )
 
 // 12- Write a js program to find highest frequency character in a string.
 // var str = "javassscript"
@@ -118,10 +205,47 @@
 //         miniChar = char ;
 //         lowFrequencyChar = counter ;
 //     }
-    
+
 //     counter = 0 ;
 // }
 // document.write("The character which appears least is "+'"'+miniChar+'"')
+
+// 14- Write a js program to count frequency of each character in a string.
+// var str = "javajavascript"
+// var element;
+// var counter = 0;
+// var ishara = 0
+// var charArr = []
+// var counterArr = []
+// for(i=0; i<str.length; i++)
+// {
+//     element = str.slice(i,i+1)
+//     for(j=0; j<str.length; j++)
+//     {
+//         if(element == str[j])
+//         {
+//             counter = counter + 1 ;
+//         }
+//     }
+//     for(k=0; k<str.length; k++)
+//     {
+//         if(element == charArr[k])
+//         {
+//             ishara = ishara + 1;
+//         }
+//     }
+//     if(ishara<1)
+//     {
+//         charArr.push(element)
+//         counterArr.push(counter)
+//     }
+//     counter = 0 ;
+//     ishara = 0 ;
+// }
+// for(i=0; i<charArr.length; i++)
+// {
+//     document.write(charArr[i]+" : "+counterArr[i]+"<br>")
+// }
 
 // 15- Write a js program to remove first occurrence of a character from string.
 // var str ="javascript is a scripting language."
@@ -267,6 +391,25 @@
 // document.write(word)
 
 // 24- Write a js program to search all occurrences of a word in given string.
+// var str = "javascript is scripting language."
+// var word = prompt("Please enter word to search:")
+// var  counter = 0 ;
+// for(i = 0; i<=str.length; i++)
+// {
+//     if(word == str.slice(i,i+word.length))
+//     {
+//         counter = 1;
+//         break
+//     }
+// }
+// if(counter == 1)
+// {
+//     document.write("Word "+word+" is found at location "+i)
+// }
+// else
+// {
+//     document.write("Word is not found")
+// }
 
 // 25- Write a js program to count occurrences of a word in a given string.
 // var str = "javascript is scripting language. javascript is browser based language."
@@ -313,8 +456,45 @@
 // }
 // document.write(str)
 
+// 29- Write a js program to trim leading white space characters from given string.
+var str = "usama &nbsp &nbsp razzaq"
+document.write(str)
 // 33- Write a js program to count frequency of each element in an array
-// var arr = [1,3,3,1,2,5,3,2,4,5,5,6,8,7,8,9]
+// var str = [1,3,4,2,3,6,4,7,6]
+// var element;
+// var counter = 0;
+// var ishara = 0
+// var charArr = []
+// var counterArr = []
+// for(i=0; i<str.length; i++)
+// {
+//     element = str[i]
+//     for(j=0; j<str.length; j++)
+//     {
+//         if(element == str[j])
+//         {
+//             counter = counter + 1 ;
+//         }
+//     }
+//     for(k=0; k<str.length; k++)
+//     {
+//         if(element == charArr[k])
+//         {
+//             ishara = ishara + 1;
+//         }
+//     }
+//     if(ishara<1)
+//     {
+//         charArr.push(element)
+//         counterArr.push(counter)
+//     }
+//     counter = 0 ;
+//     ishara = 0 ;
+// }
+// for(i=0; i<charArr.length; i++)
+// {
+//     document.write(charArr[i]+" : "+counterArr[i]+"<br>")
+// }
 
 // 34- Write a js program to print all unique elements in the array.
 // var arr = [1,2,2,3,2,4,5,4,6,8,6,7,7,9,9]
@@ -461,13 +641,7 @@
 // }
 
 // 41- Write a js program to sort array elements in ascending or descending order.
-var arr = [2,1,3]
-var element ; 
-for(i = 0 ; i<3; i++)
-{
-    
-}
-document.write(arr)
+
 
 
 
