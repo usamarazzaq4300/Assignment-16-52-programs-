@@ -1,3 +1,26 @@
+// 1- Write a js program to check whether a character is uppercase or lowercase alphabet.
+// var char = prompt("Please enter a character to check:")
+// if(char>="A" && char<="Z")
+// {
+//     alert("The character is in Upper case.")
+// }
+// else if (char>="a" && char<="z")
+// {
+//     alert("The character is in Lower case.") 
+// }
+
+// 2- Write a js program to input Week number and print week day.
+// var days = ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"]
+// var currentDate = new Date()
+// var number = prompt("Please enter week number:")
+// document.write(days[number])
+
+// 3- Write a js program to input month number and print number of days in that month.
+// var numberOfDays = [31,28,31,30,31,30,31,31,30,31,30,31]
+// var months = ["January","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+// var number = prompt("Please enter month number:")
+// document.write("There are "+numberOfDays[number]+" days in "+months[number]+".")
+
 // 4- Write a js program to count total number of notes in given amount.
 // var amount = prompt("Please enter the amount:")
 // amount = parseInt(amount)
@@ -66,12 +89,6 @@
 //     note1 = 0;
 // }
 // document.write("500 : " + note500 + "<br>"+ "100 : " + note100 + "<br>"+ "50 : " + note50 + "<br>"+ "20 : " + note20 + "<br>"+ "10 : " + note10 + "<br>"+ "5 : " + note5 + "<br>"+ "2 : " + note2 + "<br>"+ "1 : " + note1)
-
-
-
-
-
-
 
 // 5- Write a js program to input angles of a triangle and check whether triangle is valid or not.
 // var angle1 = prompt("Please enter angle of first side:")
@@ -148,6 +165,36 @@
 // {
 //     alert("roots are complex")
 // }
+
+// 9- Write a js program to calculate profit or loss.
+// var originalPrice = prompt("Please enter original price of an object:")
+// var soldPrice = prompt("Please enter sold price of an object:")
+// var profit,loss ;
+// if (soldPrice>originalPrice)
+// {
+//     profit = soldPrice - originalPrice ;
+//     document.write("You earned "+profit+" Rs.")
+// }
+// if (soldPrice<originalPrice)
+// {
+//     loss = originalPrice - soldPrice ;
+//     document.write("You loss "+loss+" Rs.")
+// }
+
+// 10- Write a js program to search all occurrences of a character in given string.
+// var string = "Java Script is Scripting Language."
+// var char = prompt("Please enter a character to search the occurances:")
+// var counter = 0
+// for(var i = 0; i<=string.length; i++)
+// {
+//     if(string.slice(i, i+1)==char)
+//     {
+//         counter = counter + 1;
+
+//     }  
+// }
+// document.write("The character "+char+ " appears "+counter+" times in a string")
+
 // 11- Write a js program to count occurrences of a character in given string.
 // var str = "javassscript"
 // var counter = 0 ;
@@ -457,8 +504,72 @@
 // document.write(str)
 
 // 29- Write a js program to trim leading white space characters from given string.
-var str = "usama &nbsp &nbsp razzaq"
-document.write(str)
+// var str = "     This is whitespace string for testing purpose     ";
+// var word ;
+// for (var i = 0; i<=str.length; i++)
+// {
+//     word = str.slice(i,i+2)
+//     if(word == "  " )
+//     {
+//         str = str.replace(word , "")
+//     }
+// }
+// var firstChar = str.slice(0,1)
+// if(firstChar == " ")
+// {
+//     str = str.replace(firstChar , "")
+// }
+// alert(str)
+
+// 30- Write a js program to trim trailing white space characters from given string.
+// var str = "This is   ";
+// var word ;
+// for (var i = str.length; i>=0; i--)
+// {
+//     word = str.slice(str.length-2,str.length)
+//     if(word == "  " )
+//     {
+//         str = str.replace(word , "")
+//     }
+// }
+// var lastChar = str.slice(str.length)
+// if(lastChar == " ")
+// {
+//     str = str.replace(lastChar , "")
+// }
+// alert(str+"usama")
+
+// 31- Write a js program to trim both leading and trailing white space characters from given string.
+// var str = "     This is whitespace string for testing purpose     ";
+// var word ;
+// for (var i = 0; i<=str.length; i++)
+// {
+//     word = str.slice(i,i+2)
+//     if(word == "  " )
+//     {
+//         str = str.replace(word , "")
+//     }
+// }
+// var firstChar = str.slice(0,1)
+// if(firstChar == " ")
+// {
+//     str = str.replace(firstChar , "")
+// }
+// for (var i = str.length; i>=0; i--)
+// {
+//     word = str.slice(str.length-2,str.length)
+//     if(word == "  " )
+//     {
+//         str = str.replace(word , "")
+//     }
+// }
+// var lastChar = str.slice(str.length)
+// if(lastChar == " ")
+// {
+//     str = str.replace(lastChar , "")
+// }
+// document.write("before"+str+"after")
+
 // 33- Write a js program to count frequency of each element in an array
 // var str = [1,3,4,2,3,6,4,7,6]
 // var element;
@@ -640,11 +751,57 @@ document.write(str)
 //     document.write(" Element not Found")
 // }
 
-// 41- Write a js program to sort array elements in ascending or descending order.
+// 42- Write a js program to sort even and odd elements of array separately.
+// var arr = [1,3,2,5,4,6,7]
+// var sortedArr = []
+// var evenArr = []
+// var oddArr = []
+// var element ;
+// for(i = 0; i<arr.length; i++)
+// {
+//     element=arr.slice(i,i+1)
+//     if(element%2 == 0)
+//     {
+//         evenArr.push(element)
+//     }
+//     else
+//     {
+//         oddArr.push(element)
+//     }
+// }
+// for (i = 0 ; i<oddArr.length; i++)
+// {
+//     sortedArr.push(oddArr[i])
+// }
+// for (i = 0 ; i<evenArr.length; i++)
+// {
+//     sortedArr.push(evenArr[i])
+// }
+// document.write(sortedArr)
 
+// 43- Write a js program to left rotate an array.
+// var arr = [1,2,3,4,5,6,7]
+// var number = prompt("How many times you want to rotate left array:")
+// var element;
+// for (i=0; i<number; i++)
+// {
+//     element=arr.shift()
+//     arr.push(element)
+// }
+// document.write("The array after rotating left "+number+" times "+"<br>"+arr)
 
+// 44- Write a js program to right rotate an array.
+// var arr = [1,2,3,4,5]
+// var number = prompt("How many times you want to rotate right array:")
+// var element;
+// for (i=0; i<number; i++)
+// {
+//     element=arr.pop()
+//     arr.unshift(element)
+// }
+// document.write("The array after rotating right "+number+" times "+"<br>"+arr)
 
-
+// 
 
 
 // 43- Write a js program to find sum of all natural numbers between 1 to n.
